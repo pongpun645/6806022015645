@@ -1,11 +1,304 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>subject.html</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f2f4f7;
+      margin: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    
+
+    .timetable {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    .timetable th,
+    .timetable td {
+      border: 1px solid #ccc;
+      text-align: center;
+      vertical-align: top;
+      height: 60px;
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    .timetable th {
+      background-color: #4883be;
+      color: white;
+      height: 40px;
+    }
+
+    .day-label {
+      background-color: #e0e0e0;
+      font-weight: bold;
+    }
+
+    
+    .class-pink {
+      background-color: #c16686;
+      border-left: 4px solid #f29dbc;
+    }
+
+    .class-green {
+      background-color: #c8e6c9;
+      border-left: 4px solid #388e3c;
+    }
+
+    .class-orange {
+      background-color: #ffe0b2;
+      border-left: 4px solid #f57c00;
+    }
+
+    .class-blue {
+      background-color: #b3e5fc;
+      border-left: 4px solid #0288d1;
+    }
+
+    .class-box {
+      padding: 4px;
+      text-align: left;
+      font-size: 13px;
+      height: 100%;
+    }
+
+    .class-box strong {
+      display: block;
+      font-size: 14px;
+    }
+
+    .scroll-table {
+      overflow-x: auto;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <h1>ตารางเรียน เทอม 1/2568</h1>
+  <h2>รหัส 01</h2>
+  <h2>นายพงศ์พันธ์ หมันเทศมัน</h2>
+  <h2>6806022510645</h2>
+
+  <div class="scroll-table">
+    <table class="timetable">
+      <thead>
+        <tr>
+          <th>วัน / เวลา</th>
+          <th>08:00 - 09:00</th>
+          <th>09:00 - 10:00</th>
+          <th>10:00 - 11:00</th>
+          <th>11:00 - 12:00</th>
+          <th>12:00 - 13:00</th>
+          <th>13:00 - 14:00</th>
+          <th>14:00 - 15:00</th>
+          <th>15:00 - 16:00</th>
+          <th>16:00 - 17:00</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="day-label">จันทร์</td>
+          <td colspan="9"></td>
+        </tr>
+        <tr>
+          <td class="day-label">อังคาร</td>
+          <td colspan="2" class="class-pink">
+            <div class="class-box">
+              <strong>060233108</strong>
+              1-POUNGKAM1
+            </div>
+          </td>
+          <td colspan="7"></td>
+        </tr>
+        <tr>
+          <td class="day-label">พุธ</td>
+          <td colspan="2" class="class-green">
+            <div class="class-box">
+              <strong>060233115</strong>
+              1-B4-01-A
+            </div>
+          </td>
+          <td></td>
+          <td colspan="2" class="class-green">
+            <div class="class-box">
+              <strong>080103063</strong>
+              1-B4-07
+            </div>
+          </td>
+          <td colspan="3"></td>
+        </tr>
+        <tr>
+          <td class="day-label">พฤหัสบดี</td>
+          <td colspan="3" class="class-orange">
+            <div class="class-box">
+              <strong>040203123</strong>
+              1-B4-20
+            </div>
+          </td>
+          <td colspan="2" class="class-orange">
+            <div class="class-box">
+              <strong>060233101</strong>
+              1-B4-16
+            </div>
+          </td>
+          <td colspan="2" class="class-orange">
+            <div class="class-box">
+              <strong>060233101</strong>
+              1-B4-16
+            </div>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="day-label">ศุกร์</td>
+          <td colspan="2"></td>
+          <td colspan="2" class="class-blue">
+            <div class="class-box">
+              <strong>080303103</strong>
+              5-4
+            </div>
+          </td>
+          <td colspan="5"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ข้อมูลนักศึกษา</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 8px;
+            text-align: center;
+            font-size: 14px;
+        }
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ข้อมูลนักศึกษา -->
+    <table>
+        <caption>รหัสนักศึกษา: 65010001</caption>
+        <tr>
+            <th>รหัส</th>
+            <th>ชื่อ-นามสกุล</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>นายพงศ์พันธ์ หมันเทศมัน</td>
+        </tr>
+    </table>
+
+    <!-- ตารางรายวิชา -->
+    <table>
+        <caption>รายวิชาที่ลงทะเบียน</caption>
+        <tr>
+            <th>รหัสวิชา</th>
+            <th>ตอนเรียน</th>
+            <th>รายวิชา</th>
+            <th>หน่วยกิต</th>
+            <th>อาจารย์ผู้สอน</th>
+            <th>วันเวลาเรียน</th>
+            <th>ห้อง</th>
+            <th>สอบกลางภาค</th>
+            <th>สอบปลายภาค</th>
+        </tr>
+        <tr>
+            <td>040203123</td>
+            <td>S.1</td>
+            <td>คณิตศาสตร์เชิงแยกและการประยุกต์</td>
+            <td>3(3-0-6)</td>
+            <td>ดร.เอกภักดิ์ เจริญเลิศมงคล</td>
+            <td>พฤ. 09:00-12:00</td>
+            <td>1-B4-20</td>
+            <td>18 ต.ค. 2568<br>09:00-12:00</td>
+            <td>21 ต.ค. 2568<br>09:00-12:00</td>
+        </tr>
+        <tr>
+            <td>060233101</td>
+            <td>S.2 / L.2</td>
+            <td>วิศวกรรมสารสนเทศและเครือข่ายเบื้องต้น</td>
+            <td>3(2-2-5)</td>
+            <td>ผศ.ยุทธการ นาคเอื้อทอง</td>
+            <td>พฤ. 13:00-15:00 / 15:00-17:00</td>
+            <td>1-B4-16</td>
+            <td>19 ต.ค. 2568<br>13:00-16:00</td>
+            <td>17 ต.ค. 2568<br>09:00-12:00</td>
+        </tr>
+        <tr>
+            <td>060233108</td>
+            <td>S.1</td>
+            <td>การสื่อสารข้อมูลและเครือข่ายคอมพิวเตอร์</td>
+            <td>3(3-0-6)</td>
+            <td>ดร.วัชรชัย คงศิริวัฒนา</td>
+            <td>ศ. 09:00-12:00</td>
+            <td>1-POUNGKAM1</td>
+            <td>22 ต.ค. 2568<br>09:00-12:00</td>
+            <td>16 ต.ค. 2568<br>09:00-12:00</td>
+        </tr>
+        <tr>
+            <td>060233115</td>
+            <td>S.2 / L.2</td>
+            <td>การเขียนโปรแกรมคอมพิวเตอร์</td>
+            <td>3(2-2-5)</td>
+            <td>ดร.ณัฐช ม่วงขวัญ</td>
+            <td>พฤ. 08:00-10:00 / 10:00-12:00</td>
+            <td>1-B4-01-A</td>
+            <td>21 ต.ค. 2568<br>09:00-12:00</td>
+            <td>21 ต.ค. 2568<br>13:00-16:00</td>
+        </tr>
+        <tr>
+            <td>080103063</td>
+            <td>S.1</td>
+            <td>การใช้งานภาษาอังกฤษ</td>
+            <td>3(3-0-6)</td>
+            <td>อ.ธนภูมิ พุ่มพนม</td>
+            <td>พ. 13:00-16:00</td>
+            <td>1-B4-07</td>
+            <td>20 ต.ค. 2568<br>13:00-16:00</td>
+            <td>17 ต.ค. 2568<br>13:00-16:00</td>
+        </tr>
+        <tr>
+            <td>080303103</td>
+            <td>S.4</td>
+            <td>จิตวิทยาเพื่อความสุขในการดำรงชีวิต</td>
+            <td>3(3-0-6)</td>
+            <td>อ.ฤกษ์เกษ ตุกาวุ่น</td>
+            <td>ศ. 13:00-16:00</td>
+            <td>-</td>
+            <td>18 ต.ค. 2568<br>13:00-16:00</td>
+            <td>14 ต.ค. 2568<br>13:00-16:00</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
